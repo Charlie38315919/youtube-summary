@@ -3,17 +3,17 @@ import openai
 import streamlit as st
 from youtube_transcript_api import YouTubeTranscriptApi
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from youdotenv import load_youdotenv, find_dotenv
+#from youdotenv import load_youdotenv, find_dotenv
 import os
-
+openai_api_key = "sk-proj-TfI1pso6zVx32z8ICNVST3BlbkFJarTNcSFiZ2bmgzX5Swhv"
 
 
 
 # Specify the path to your .env file
-env_path = 'you.env/openai_api' # Change the Path
+#env_path = 'you.env/openai_api' # Change the Path
 # Load the OpenAI API key from the .env file
-load_youdotenv(env_path)
-openai.api_key = os.getenv('OPENAI_API_KEY')
+#load_youdotenv(env_path)
+#openai.api_key = os.getenv('OPENAI_API_KEY')
 
 def get_transcript(youtube_url):
     video_id = youtube_url.split("v=")[-1]
