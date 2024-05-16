@@ -4,7 +4,7 @@ from youtube_transcript_api import YouTubeTranscriptApi
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 import openai
 
-openai_api_key = "sk-proj-To1tr1DTSqGczsxF1X5UT3BlbkFJe86XqmhzjB84NrGRGpPc"
+openai_api_key = "sk-proj-NVefsTA4ZXhskzb1Qy8iT3BlbkFJrwMEKE8N9GPaXCse7lou"
 
 def get_transcript(youtube_url):
     video_id = youtube_url.split("v=")[-1]
